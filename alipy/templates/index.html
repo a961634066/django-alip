@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<form action="/payclass" method="post">
+    {% csrf_token %}
+    <input type="text" name="money">
+    <input type="submit" name="提交">
+</form>
+</body>
+</html>
